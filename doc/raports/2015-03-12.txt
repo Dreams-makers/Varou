@@ -1,0 +1,18 @@
+2015/03/13 :
+============
+
+- Choix du projet
+    - Steampunk werewolf
+
+- GitHub a été choisi et SVN écarté.
+
+-----------------------------------------------------------
+
+TODO :
+======
+
+- Virgile : Rassembler les fichiers pré-existants
+            Préparer un dossier papier du projet
+            
+- Pako : Créer un dépot GitHub
+         Créer un squelette de GDD à remplir

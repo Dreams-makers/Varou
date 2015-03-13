@@ -1,0 +1,15 @@
+Projet Varou Avancement
+    Mise en place
+        GitHub
+            Création du dépot 100%
+            Installation du client 50%
+        Documentation
+            GDD
+                Squelette/Plan  60%
+                Conversion ODT ver LaTeX
+            Bible
+        Selection des outils
+            Gestionnaire de projets avec dead lines
+            Wiki
+            FTP
+        Répartition des rôles
