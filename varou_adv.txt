@@ -2,7 +2,7 @@ Projet Varou Avancement
     Mise en place
         GitHub
             Création du dépot 100%
-            Installation du client 50%
+            Installation du client 100%
         Documentation
             GDD
                 Squelette/Plan  60%
