@@ -1,0 +1,148 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF-Informations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% ATTENTION: You need a main file to use this one here.
+%%            Use the command "\input{filename}" in your
+%%            main file to include this file.
+%%
+
+\pdfinfo{                               % Info dictionary of PDF output;
+                                        % all keys are optional.
+    /Author (Virgile Lebailly)
+    /CreationDate (D:20011010111111)    % (D:YYYYMMDDhhmmss)
+                                        % YYYY  year
+                                        % MM    month
+                                        % DD    day
+                                        % hh    hour
+                                        % mm    minutes
+                                        % ss    seconds
+                                        %
+                                        % default: the actual date
+                                        %
+    /ModDate (D:20011010111111)         % ModDate is similar
+    /Creator (TeX && TXC)               % default: "TeX"
+    /Producer (pdfTeX)                  % default: "pdfTeX" + pdftex version
+    /Title (Cahier des charges)
+    /Subject ()
+    /Keywords ()
+}
+
+\documentclass{report}
+
+\usepackage[latin1]{inputenc}  %pour pouvoir utiliser tous les caractères de mon clavier
+\usepackage[T1]{fontenc}   %idem
+\usepackage[francais]{babel}  %pour spécifier que j'écris en francais
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{array}
+
+\title{Varou}
+\author{Virgile}
+\date{16 Mars 2015}
+
+\makeindex
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+Projet Varou
+
+
+Game Design Document
+
+
+
+Une production Dreams makers
+
+
+
+\part{Introduction}
+
+
+\chapter{Informations générales}
+	\include{I.1.1_Description_du_jeu}
+
+
+\part{Design du jeu}
+
+\chapter{Histoires}
+\section{Résumé}
+Truc de 15 lignes, avec les principales étapes.
+\section{Personnage principal}
+C'est qui, d'où il vient, etc.
+\chapter{Frontend}
+\section{Gameplay}
+\subsection{Déplacements}
+\subsection{En combat}
+Le système de combat de Varou est du hack and slash. C'est à dire que l'on devra cliquer pour taper avec l'arme choisi. Le clic droit servira quand à lui à se servir de son environnement, le temps ralentissant quand l'on est dans le menu. La souris étant libre. L'environnement étant dynamique, le joueur devra se placer et intéragir intelligement pour gagner ses combats.
+
+\section{Intéraction avec l'environnement}
+
+\subsection{Intéraction avec les PNJs}
+
+\subsection{Intéraction avec les objets}
+
+\section{GUI}
+
+\section{Style graphiques}
+Ambiance, palette de couleur, etc.
+\section{Style musical et bruits d'ambiance}
+
+
+\part{Mécaniques}
+	\include{}
+\chapter{Crafts}
+\section{Sur place}
+trucs que l'on peut faire n'importe où
+\section{A emporter}
+Necessite la presence d'un element fixe, un pnj, un batiment, ...
+\chapter{Techniques et aptitudes}
+\chapter{Combat et calculs des dégâts}
+\chapter{Magie}
+\chapter{Glyphs}
+\chapter{Arbres et écoles}
+\chapter{Quêtes}
+\chapter{Inventaires}
+\section{Gestion de l'inventaire du héro}
+\section{Marchants}
+\chapter{Interactions avec l'environnement}
+\chapter{Vættfang}
+
+
+
+	
+\part{Level design}
+	\include{}
+
+\chapter{Cartes Géographiques}
+où est quoi ?
+\chapter{IV.2 Géopolitiques}
+qui déteste qui
+
+
+
+\part{Outils}
+	\include{}
+\chapter{V.1 GitHub}
+\section{Description}
+GitHub est un outil permettant de travailler à plusieurs sur un projet et plus particulièrement sur un ensemble de fichiers synchronisés.
+Le dépôt utilisé est situé à https://github.com/pakoskyfrog/Varou
+\section{Utilisation}
+L'utilisateur doit installer le client et importer le depot.
+Avant de se mettre au travail, l'utilisateur doit synchroniser son dossier de travaille afin de posséder les dernières modifications.
+Durant son travail, à chaque étape majeure, l'utilisateur devra faire un « commit », opération qui dit au gestionnaire de GitHub de préparer une synchronisation des fichiers.
+A la fin de sa session de travail, l'utilisateur devra « publier » afin de mettre à jour le dépôt online avec son travail.
+\chapter{Wiki}
+\chapter{Moteur 3D}
+OGRE ?
+Unity ?
+
+	
+\end{document}
