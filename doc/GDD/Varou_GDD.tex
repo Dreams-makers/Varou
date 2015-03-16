@@ -41,7 +41,7 @@
 \usepackage{array}
 
 \title{Varou}
-\author{Virgile}
+\author{Dreams Makers}
 \date{16 Mars 2015}
 
 \makeindex
@@ -58,91 +58,67 @@ Projet Varou
 Game Design Document
 
 
-
 Une production Dreams makers
-
-
 
 \part{Introduction}
 
-
-\chapter{Informations générales}
-	\include{I.1.1_Informations_generales}
-
+	\chapter{Informations générales}
+		\include{I.1_Informations_generales}
 
 \part{Design du jeu}
 
-\chapter{Histoires}
-\section{Résumé}
-Truc de 15 lignes, avec les principales étapes.
-\section{Personnage principal}
-C'est qui, d'où il vient, etc.
-\chapter{Frontend}
-\section{Gameplay}
-\subsection{Déplacements}
-\subsection{En combat}
-Le système de combat de Varou est du hack and slash. C'est à dire que l'on devra cliquer pour taper avec l'arme choisi. Le clic droit servira quand à lui à se servir de son environnement, le temps ralentissant quand l'on est dans le menu. La souris étant libre. L'environnement étant dynamique, le joueur devra se placer et intéragir intelligement pour gagner ses combats.
-
-\section{Intéraction avec l'environnement}
-
-\subsection{Intéraction avec les PNJs}
-
-\subsection{Intéraction avec les objets}
-
-\section{GUI}
-
-\section{Style graphiques}
-Ambiance, palette de couleur, etc.
-\section{Style musical et bruits d'ambiance}
-
+	\chapter{Histoires}
+		\include{II.1_Histoires}
+	
+	\chapter{Frontend}
+		\include{II.2_Frontend}
 
 \part{Mécaniques}
-	\include{}
-\chapter{Crafts}
-\section{Sur place}
-trucs que l'on peut faire n'importe où
-\section{A emporter}
-Necessite la presence d'un element fixe, un pnj, un batiment, ...
-\chapter{Techniques et aptitudes}
-\chapter{Combat et calculs des dégâts}
-\chapter{Magie}
-\chapter{Glyphs}
-\chapter{Arbres et écoles}
-\chapter{Quêtes}
-\chapter{Inventaires}
-\section{Gestion de l'inventaire du héro}
-\section{Marchants}
-\chapter{Interactions avec l'environnement}
-\chapter{Vættfang}
-
-
-
+	\chapter{Crafts}
+		\include{III.1_Crafts}
+		
+	\chapter{Techniques et aptitudes}
+		\include{III.2_Techniques_et_aptitudes}
+		
+	\chapter{Combat et calculs des dégâts}
+		\include{III.3_Calculs_des_degats}
+		
+	\chapter{Magie}
+		\include{III.4_Magie}
 	
+	\chapter{Glyphs}
+		\include{III.5_Glyphs}	
+	
+	\chapter{Quêtes}
+		\include{III.6_Quetes}
+	
+	\chapter{Inventaire}
+		\include{III.7_Inventaire}
+	
+	\section{Gestion de l'inventaire du héro}
+		\include{III.7_Inventaire}
+	
+	\section{Marchants}
+		\include{III.7_Inventaire}	
+	
+	\chapter{Interactions avec l'environnement}
+		\include{III.8_Interactions_avec_lenvironnement}	
+	
+	\chapter{Vættfang}
+		\include{III.8_Vaettfang}	
+
 \part{Level design}
-	\include{}
-
-\chapter{Cartes Géographiques}
-où est quoi ?
-\chapter{IV.2 Géopolitiques}
-qui déteste qui
-
-
 
 \part{Outils}
-	\include{}
+
 \chapter{V.1 GitHub}
-\section{Description}
-GitHub est un outil permettant de travailler à plusieurs sur un projet et plus particulièrement sur un ensemble de fichiers synchronisés.
-Le dépôt utilisé est situé à https://github.com/pakoskyfrog/Varou
-\section{Utilisation}
-L'utilisateur doit installer le client et importer le depot.
-Avant de se mettre au travail, l'utilisateur doit synchroniser son dossier de travaille afin de posséder les dernières modifications.
-Durant son travail, à chaque étape majeure, l'utilisateur devra faire un « commit », opération qui dit au gestionnaire de GitHub de préparer une synchronisation des fichiers.
-A la fin de sa session de travail, l'utilisateur devra « publier » afin de mettre à jour le dépôt online avec son travail.
+		\include{V.1_GitHub}
+		
 \chapter{Wiki}
+		\include{V.2_Wiki}
+		
 \chapter{Moteur 3D}
-OGRE ?
-Unity ?
+		\include{V.3_MoteurGraph}
 
 	
 \end{document}
