@@ -13,7 +13,6 @@
 *.bbl
 *.blg
 *.idx
-*.tcp
 *.toc
 *.tps
 
