@@ -9,7 +9,13 @@
  
 # LaTeX Temporary files #
 #########################
-
+*.aux
+*.bbl
+*.blg
+*.idx
+*.tcp
+*.toc
+*.tps
 
  
 # Packages #
