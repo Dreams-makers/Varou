@@ -1,1 +1,87 @@
-Vættfang
+\section{Matériel}
+Ce jeu se joue avec un deck de 50 cartes et un sceau de 100 dés.\\
+Il à un tapis de jeu de 5 emplacements de cartes par joueurs.
+
+\section{Règles}
+
+Au début de la partie, chaque joueur choisi un nombre de dé (caché) dans sa réserve. Celui qui obtient le plus haut score joue en deuxième.\\
+Les tours sont divisés en 3 phases :
+		\begin{itemize}
+				\item Phase de pioche :\\
+				Le joueur pioche jusqu'à avoir 5 cartes en main.
+				\item Phase de pose :\\
+				Le joueur pose ses cartes et peut déplacer une seule carte.
+				\item Phase d'attaque :\\
+				Le joueurs peut attaquer avec une créature. Une carte ne peut attaquer que la carte en face d'elle.
+		\end{itemize}
+		
+La phase d'attaque est divisée en plusieurs sections :
+		\begin{itemize}
+				\item Le joueur attaquant déclare avec qu'elle carte il va attaquer
+				\item Le joueur attaquant déclare combien de dés il va utiliser pour attaquer
+				\item Le joueur défenceur déclare combien de dés il va utiliser pour défendre
+				\item Le joueur attaquand déclare combien de dés il va utiliser pour son pari
+				\item Résolution du combat
+		\end{itemize}
+
+\section{pari}
+	Le joueur attaquant peut placer un pari sur son attaque.\\
+	Pour cela le joueur doit consommer des dés de sa réserve pour pouvoir gagner un multiplicateur de score. Attention, si le joueur perd le combat, le multiplicateur est aussi
+	utilisé.\\
+	Le joueurs attaquant peut utiliser jusqu'à 5 dés, mais pas plus de dés qu'il n'y a de cartes en jeu.
+			\begin{itemize}
+				\item 1 dé  : x2
+				\item 2 dés : x4
+				\item 3 dés : x8
+				\item 4 dés : x16
+				\item 5 dés : x32
+		\end{itemize}
+		
+\section{Cartes}
+Les cartes ont plusieurs attribus :
+		\begin{itemize}
+				\item Nom : Le nom de la carte
+				\item Valeur : La valeur de la carte (sa puissance)
+				\item Coût : Le coût en points de la carte pour la poser
+				\item Coût à vide : Le coût en points de la carte si le joueur n'a aucune carte en jeu
+				\item Attaque : La valeur d'attaque de la carte
+				\item Défense : La valeur de défense de la carte
+				\item Capacité : La capacité de la carte si elle en possède une
+		\end{itemize}
+		
+\section{Pose des cartes}
+Le joueur dont c'est le tour peut poser jusqu'à 5 cartes devant lui.\\
+Pour cela il doit soustraire de son score le coût en points de la carte.
+
+\section{Combat}
+Pour savoir qui gagne le combat :\\
+(Attaque de la carte + résultat des dés) = Vatt\\
+(Défense de la carte + résultat des dés) = Vdef\\
+\\
+Vatt VS Vdef\\
+\\
+Si l'attaquant gagne, la carte défenseur est tuée.\\
+Et l'attaquant augmente son score de :\\
+(((Vatt - Vdef)/nombre de dés utilisés)+(Valeur de la carte défensive - Valeur de la carte attaquante))*multiplicateur de pari\\
+\\
+Si l'attaquant perd, aucune carte n'est tuée à moins que la différence de combat ne soit supérieur à la défense de la carte attaquante. Dans ce cas celle-ci est détruite.\\
+Et l'attaquant diminue son score de :\\
+(((Vdef - Vatt)*nombre de dés utilisés)+(Valeur de la carte attaquante - Valeur de la carte défensive))*multiplicateur de pari\\
+\\
+Un score ne peut jamais être négatif\\
+
+\section{fin de partie}
+La partie prend fin si un joueur n'a plus de dés dans sa réserve au début de son tour.\\
+OU\\
+La partie prend fin si un joueur n'a plus de carte dans son deck ni en jeu à la fin de son tour.\\
+Le joueur ayant le meilleur score remporte la partie.
+
+\section{Graphismes}
+Voir le sceau de dé diminuer quand on y pioche des dés et qu'on puisse les compter quand on arrive à la fin.\\
+On ne voit pas combien de dés il reste à l'adversaire (même à la fin)
+
+\includegraphics{T3_Mecaniques/Cartes&Des_Images/Plateau_de_jeu.jpg}
+
+\section{liste des cartes}
+
+\input{T3_Mecaniques/liste_cartes}
