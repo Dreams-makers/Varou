@@ -9,7 +9,12 @@ Projet Varou Avancement
                 Conversion ODT ver LaTeX
             Bible
         Selection des outils
-            Gestionnaire de projets avec dead lines
-            Wiki
+            Gestionnaire de projets avec dead lines (à tester, par préférence)
+                Brixhq http://www.brixhq.com/
+                Freedcamp http://freedcamp.com/
+                Project http://www.project.net/
+                ProofHub https://www.proofhub.com/
+                TeamBox http://teambox.com/
+            Wiki... utilisation de celui de GitHub 100%
             FTP
         Répartition des rôles
