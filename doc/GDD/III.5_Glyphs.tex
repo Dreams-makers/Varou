@@ -1,7 +1,7 @@
 \section{Description}
-Les glyphs sont des mouvements Ã  effectuer Ã  la souris afin de lancer un sort. Ces glyphs seront reconnu par un systeme de reconnaissance adaptatifs.
-Si le mouvement est trop loin des glyphs connus ou possible, aucun sort ne sera lancÃ©.
+Les glyphs sont des mouvements à effectuer à la souris afin de lancer un sort. Ces glyphs seront reconnu par un systeme de reconnaissance adaptatifs.
+Si le mouvement est trop loin des glyphs connus ou possible, aucun sort ne sera lancé.
 \section{Reconnaissance}
-L'entitÃ© glyph est exactement un tracÃ© d'une ligne courbe. Le taux de correlation avec la liste prÃ©dÃ©finie (un glyph par sort) permetera une diffÃ©rentiation et un taux rÃ©ussite du sort plus ou moins Ã©levÃ©.
-Une premiÃ¨re idÃ©e est d'utiliser une reconnaissance par correlation d'un chemin vectoriel. Un glyph n'est pas comme une lettre curviligne oÃ¹ un traitement d'image serait necessaire, car il y plusieurs traits. Un glyph possÃ¨de un point de dÃ©part et un point d'arret. En discrÃ©tisant le chemin parcouru en une sÃ©rie vectoriel, le gradient de celle-ci pourrait offrir un moyen de comparaison avec une liste de modÃ¨le.
-IdÃ©alement, le calcul serait Ã  rÃ©partir en une liste d'Ã©quations rÃ©solvables en une Ã©tape, par inversion de matrice.
+L'entité glyph est exactement un tracé d'une ligne courbe. Le taux de correlation avec la liste prédéfinie (un glyph par sort) permetera une différentiation et un taux réussite du sort plus ou moins élevé.
+Une première idée est d'utiliser une reconnaissance par correlation d'un chemin vectoriel. Un glyph n'est pas comme une lettre curviligne où un traitement d'image serait necessaire, car il y plusieurs traits. Un glyph possède un point de départ et un point d'arrêt. En discrétisant le chemin parcouru en une série vectoriel, le gradient de celle-ci pourrait offrir un moyen de comparaison avec une liste de modèle.
+Idéalement, le calcul serait à répartir en une liste d'équations résolvables en une étape, par inversion de matrice.
